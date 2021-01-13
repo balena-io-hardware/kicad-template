@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name _balena)(type Legacy)(uri ${KIPRJMOD}/../lib/symbols/balena.lib)(options "")(descr "Balena Symbols"))
+)

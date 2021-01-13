@@ -1,0 +1,105 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "default"
+Date "2020-11-05"
+Rev "v1.0"
+Comp "balena"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5F92FCC2
+P 5000 3725
+F 0 "R1" H 5100 3800 50  0000 L CNN
+F 1 "100" H 5100 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4930 3725 50  0001 C CNN
+F 3 "~" H 5000 3725 50  0001 C CNN
+F 4 "+var1" H 5200 3625 50  0000 C CNN "Variant"
+F 5 "CRS1206-FX-1001ELF" H 5000 3725 50  0001 C CNN "MPN"
+	1    5000 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3875 5000 3925
+Wire Wire Line
+	5000 3925 4750 3925
+Wire Wire Line
+	4750 3925 4750 3500
+Wire Wire Line
+	4750 3500 5000 3500
+Wire Wire Line
+	5000 3500 5000 3575
+$Comp
+L Device:R R2
+U 1 1 5FA43E0A
+P 6000 3725
+F 0 "R2" H 6100 3800 50  0000 L CNN
+F 1 "100" H 6100 3700 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5930 3725 50  0001 C CNN
+F 3 "~" H 6000 3725 50  0001 C CNN
+F 4 "+var2" H 6175 3625 50  0000 C CNN "Variant"
+F 5 "CRS1206-FX-1001ELF" H 6000 3725 50  0001 C CNN "MPN"
+	1    6000 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3875 6000 3925
+Wire Wire Line
+	6000 3925 5750 3925
+Wire Wire Line
+	5750 3500 6000 3500
+Wire Wire Line
+	6000 3500 6000 3575
+$Comp
+L Graphic:Logo_Open_Hardware_Large LOGO1
+U 1 1 5FA45422
+P 10500 5750
+F 0 "LOGO1" H 10500 6250 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 10500 5350 50  0001 C CNN
+F 2 "Symbol:KiCad-Logo_5mm_SilkScreen" H 10500 5750 50  0001 C CNN
+F 3 "~" H 10500 5750 50  0001 C CNN
+	1    10500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FA45E53
+P 5375 3500
+F 0 "C1" V 5075 3525 50  0000 C CNN
+F 1 "100nF" V 5175 3525 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5413 3350 50  0001 C CNN
+F 3 "~" H 5375 3500 50  0001 C CNN
+F 4 "CL10B104JB8NNND" H 5375 3500 50  0001 C CNN "MPN"
+	1    5375 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5225 3500 5000 3500
+Connection ~ 5000 3500
+Wire Wire Line
+	5525 3500 5750 3500
+Connection ~ 5750 3500
+$Comp
+L power:GND #PWR0101
+U 1 1 5FAE76D6
+P 5750 4100
+F 0 "#PWR0101" H 5750 3850 50  0001 C CNN
+F 1 "GND" H 5755 3927 50  0000 C CNN
+F 2 "" H 5750 4100 50  0001 C CNN
+F 3 "" H 5750 4100 50  0001 C CNN
+	1    5750 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3500 5750 3925
+Connection ~ 5750 3925
+Wire Wire Line
+	5750 3925 5750 4100
+$EndSCHEMATC

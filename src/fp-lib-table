@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name _balena)(type KiCad)(uri ${KIPRJMOD}/../lib/footprints/balena.pretty)(options "")(descr "Balena Footprints"))
+)

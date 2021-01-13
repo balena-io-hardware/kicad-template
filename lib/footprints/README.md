@@ -1,0 +1,1 @@
+Add footprint libraries here as a `.pretty` directory, consisting of `.kicad_mod` footprints.
